@@ -1,0 +1,5 @@
+{
+  "name": "image-tag",
+  "description": "Un tag image (avec figure/picture) responsive",
+  "type": "fragment"
+}

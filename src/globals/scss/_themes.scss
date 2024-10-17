@@ -1,0 +1,24 @@
+:root {
+    color-scheme: light dark;
+
+    --block-background: var(--background-dark);
+    --block-color: var(--color-for-background-dark);
+
+    --body-background: var(--background-light);
+    --body-color: var(--color-for-background-light)
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --block-background: var(--background-gray);
+        --block-color: var(--color-for-background-gray);
+
+        --body-background: var(--background-dark);
+        --body-color: var(--color-for-background-dark)
+    }
+
+    img {
+        /* Make images dimmer for dark theme. */
+        filter: brightness(85%);
+    }
+}

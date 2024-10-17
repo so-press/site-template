@@ -1,0 +1,31 @@
+/* @link https://utopia.fyi/type/calculator?c=320,25,1.2,1240,30,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --font-step--2: clamp(1.0851rem, 1.0451rem + 0.1999vw, 1.2rem);
+    --font-step--1: clamp(1.3021rem, 1.2332rem + 0.3442vw, 1.5rem);
+    --font-step-0: clamp(1.5625rem, 1.4538rem + 0.5435vw, 1.875rem);
+    --font-step-1: clamp(1.875rem, 1.712rem + 0.8152vw, 2.3438rem);
+    --font-step-2: clamp(2.25rem, 2.0136rem + 1.1821vw, 2.9297rem);
+    --font-step-3: clamp(2.7rem, 2.3654rem + 1.6732vw, 3.6621rem);
+    --font-step-4: clamp(3.24rem, 2.7747rem + 2.3263vw, 4.5776rem);
+    --font-step-5: clamp(3.888rem, 3.2501rem + 3.1896vw, 5.722rem);
+}
+
+:root {
+
+    --title-font: 'Apple Garamond Light', serif;
+    // --content-font: 'Charter', Garamond, serif;
+    --content-font: 'Playfair Display', Garamond, serif;
+    --sans-serif-font: sans-serif;
+
+    --font-bold: 600;
+
+    --font-size-xsmall: .6rem;
+    --font-size-small: .8rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.2rem;
+    --font-size-xlarge: 1.4rem;
+    --font-size-title: var(--font-step-5);
+    --font-size-content: var(--font-step--2);
+
+}

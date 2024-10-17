@@ -1,0 +1,36 @@
+.bouton {
+    --font-size: var(--font-size-small);
+    --color: var(--color-for-background-primary);
+    --background-color: var(--background-primary);
+    --border-color: var(--background-primary-darker);
+
+    &:hover {
+        --color: var(--color-for-background-dark);
+        --background-color: var(--background-dark);
+    }
+
+    display: inline-block;
+    color: var(--color);
+    background-color: var(--background-color);
+    text-decoration: none;
+    font-family: var(--sans-serif-font);
+    padding-inline: var(--gap-medium);
+    padding-block: var(--gap-small);
+    font-size: var(--font-size);
+    border-radius: 6px;
+    transition: all .2s ease-in-out;
+    border:1px solid var(--border-color)
+}
+
+
+button:has(>svg) {
+    color: inherit;
+    background-color: transparent;
+    border: 0;
+
+    >svg {
+        fill: currentColor;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "container",
+  "description": "Un conteneur multi usage pour centrer et dimensionner le contenu de la page",
+  "type": "fragment"
+}

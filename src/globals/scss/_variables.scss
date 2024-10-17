@@ -1,0 +1,48 @@
+:root {
+    --site-width: clamp(500px, 100vw, 700px);
+    --gap-small: .5rem;
+    --gap-medium: .8rem;
+    --gap: 2rem;
+    --gap-large: 3rem;
+    --gap-xlarge: 4rem;
+
+
+
+    --color-orange: #fbb41a;
+    --color-orange-fonce: #856010;
+
+    --color-black: #000;
+    --color-darkgray: #292929;
+    --color-white: #fff;
+    --color-white-alt: #f0f0f0;
+
+    --background-dark: var(--color-black);
+    --color-for-background-dark: var(--color-white);
+
+    --background-blue: #040e1c;
+    --color-for-background-blue: var(--color-white-alt);
+
+    --background-gray: var(--color-darkgray);
+    --color-for-background-gray: var(--color-white-alt);
+
+    --background-light: var(--color-white);
+    --color-for-background-light: var(--color-darkgray);
+
+    --background-primary: var(--color-orange);
+    --background-primary-darker: var(--color-orange-fonce);
+    --color-for-background-primary: var(--color-darkgray);
+
+    --link-color: var(--color-darkgray);
+    --text-color: var(--color-darkgray);
+
+
+    --cover-ratio: 250 / 325;
+}
+
+
+html {
+    --layout-gap: var(--gap-medium);
+    --navbar-height: 62px;
+    --navbar-index: 99999;
+    --viewport-height: calc(100vh - var(--navbar-height));
+}

@@ -1,0 +1,5 @@
+{
+  "name": "bloc",
+  "description": "Un bloc réutilisable",
+  "type": "fragment"
+}

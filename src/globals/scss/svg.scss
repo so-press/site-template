@@ -1,0 +1,17 @@
+figure:has(>svg) {
+    position: relative;
+    display: block;
+
+    >svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,8 @@
+
+[[headers]]
+for = "/*" # Apply CORS headers to all routes
+[headers.values]
+Access-Control-Allow-Credentials = "true" # Allow credentials if needed
+Access-Control-Allow-Headers = "Content-Type, Authorization" # Specify allowed headers
+Access-Control-Allow-Methods = "GET, POST, OPTIONS" # Allow specific HTTP methods
+Access-Control-Allow-Origin = "*" # Allow all origins
