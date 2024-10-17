@@ -52,4 +52,5 @@ rmdir /s /q "%tempfolder%" || (
 )
 
 echo Update completed successfully.
+pause
 exit /b 0

@@ -50,3 +50,4 @@ rm -rf "$tempfolder" || {
 }
 
 echo "Update completed successfully."
+read -p
