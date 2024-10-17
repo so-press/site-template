@@ -134,3 +134,5 @@ Sous windows, lancer la commande suivante
 ```
 npm run update
 ```
+
+**Attention** Il est recommandé de sauver son travail et d'avoir tout commit avant de lancer un update
