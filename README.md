@@ -93,4 +93,14 @@ Le déploiement peut se faire sur netlify, en utilisant le dossier de build `./d
 
 ## Installation
 
-Cloner le dépot et Lancer `npm i`
+Sous windows, lancer la commande suivante
+
+```
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/so-press/site-template/refs/heads/master/lib/scripts/install.bat" -OutFile "./install.bat"; Start-Process "./install.bat"
+```
+
+Sous Linux ou Mac
+
+```
+    curl -O https://raw.githubusercontent.com/so-press/site-template/refs/heads/master/lib/scripts/install.sh && chmod +x install.sh && ./install.sh
+```
