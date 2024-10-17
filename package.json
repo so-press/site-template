@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "nodemon template.js",
     "build": "node template.js --build",
-    "gen": "node template.js --gen"
+    "gen": "node template.js --gen",
+    "update": "node lib/maintenance/update.js"
   },
   "keywords": [],
   "author": "",

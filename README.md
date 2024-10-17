@@ -2,6 +2,8 @@
 
 Création d'un template de site. Cet outil permet d'intégrer un design et de créer des pages, puis de les enrichir de CSS et de JS pour pouvoir ensuite les incorporer dans un site web de production.
 
+## dossiers
+
 Le dossier `./src` contient les fichiers utilisés pour construire le design: `.js`, `.css` ou `.scss`, `.hbs` et `.json`. Le dossier `./src/assets` contient lui les assets (svg principalement) utilisés par la tâche de build
 
 Le dossier `./public` contient lui tous les éléments destinés à être publics sur le site de production. Avant chaque build, l'intégralité du dossier `./public` est copié dans le dossier `./dist` contenant l'application buildée
@@ -109,4 +111,12 @@ Sous Linux ou Mac
 
 ```
 curl -O https://raw.githubusercontent.com/so-press/site-template/refs/heads/master/lib/scripts/install.sh && chmod +x install.sh && ./install.sh
+```
+
+## Mise à jour
+
+Sous windows, lancer la commande suivante
+
+```
+npm run update
 ```
