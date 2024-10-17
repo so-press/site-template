@@ -2,6 +2,12 @@
 
 Création d'un template de site. Cet outil permet d'intégrer un design et de créer des pages, puis de les enrichir de CSS et de JS pour pouvoir ensuite les incorporer dans un site web de production.
 
+Le dossier `./src` contient les fichiers utilisés pour construire le design: `.js`, `.css` ou `.scss`, `.hbs` et `.json`. Le dossier `./src/assets` contient lui les assets (svg principalement) utilisés par la tâche de build
+
+Le dossier `./public` contient lui tous les éléments destinés à être publics sur le site de production. Avant chaque build, l'intégralité du dossier `./public` est copié dans le dossier `./dist` contenant l'application buildée
+
+Le dossier `./src/globals/` contient tous les éléments js et (s)css non spécifiques à un composant en particulier. Il contient aussi les fichiers `head.rbs` et `foot.rbs` qui sont automatiquement ajoutés avant et après le contenu des pages lors de leur build
+
 ## Concepts : Les "briques"
 
 Une brique peut être : Une page, un composant ou un fragment
@@ -20,9 +26,9 @@ Un fragment ne contient que du HTML standard
 Les briques sont stockées dans les dossiers
 
 ```
-    ./src/pages/
-    ./src/components/
-    ./src/fragments/
+./src/pages/
+./src/components/
+./src/fragments/
 ```
 
 Chaque brique se compose d'un dossier dont le nom est un slug. Exemple : `./src/fragments/menu`
@@ -62,7 +68,7 @@ Les fichiers `.hbs` peuvent inclure des assets svg via la syntaxe {{svg 'slug du
 On peut lancer une commande permettant de prototyper des nouvelles briques. Lancer la commande suivante et se laisser guider par les question du générateur
 
 ```
-    npm run gen
+npm run gen
 ```
 
 Une fois la création de la brique terminée, ses fichiers sont disponibles dans `./src/[type de brique]/[nom de la brique]. Si la brique est une page, elle sera accessible via l'uri /[slug de la brique].html
@@ -72,7 +78,7 @@ Une fois la création de la brique terminée, ses fichiers sont disponibles dans
 On peut lancer un build pour obtenir une version 100% HTML statique du site, avec tous les fichiers SASS compilés dans un fichier unique CSS, et un fichier JS unique reprenant tous les modules
 
 ```
-    npm run build
+npm run build
 ```
 
 Les fichiers seront générés dans le dossier `./dist`
@@ -82,7 +88,7 @@ Les fichiers seront générés dans le dossier `./dist`
 On peut lancer un serveur local en utilisant la commande
 
 ```
-    npm run dev
+npm run dev
 ```
 
 Le serveur tourne sur localhost, avec le port défini dans le fichier .env.
@@ -96,11 +102,11 @@ Le déploiement peut se faire sur netlify, en utilisant le dossier de build `./d
 Sous windows, lancer la commande suivante
 
 ```
-    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/so-press/site-template/refs/heads/master/lib/scripts/install.bat" -OutFile "./install.bat"; Start-Process "./install.bat"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/so-press/site-template/refs/heads/master/lib/scripts/install.bat" -OutFile "./install.bat"; Start-Process "./install.bat"
 ```
 
 Sous Linux ou Mac
 
 ```
-    curl -O https://raw.githubusercontent.com/so-press/site-template/refs/heads/master/lib/scripts/install.sh && chmod +x install.sh && ./install.sh
+curl -O https://raw.githubusercontent.com/so-press/site-template/refs/heads/master/lib/scripts/install.sh && chmod +x install.sh && ./install.sh
 ```
