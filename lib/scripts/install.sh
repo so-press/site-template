@@ -56,16 +56,9 @@ rm -rf .git || {
 
 echo "Your app is ready."
 echo "You can now start to code by launching:"
-echo "   cd $fullpath"
-echo "   npm install"
-echo "   npm run dev"
-    echo "Error: Failed to remove the .git folder."
-    exit 1
-}
+echo "cd $fullpath"
+echo "npm install"
+echo "npm run dev"
+echo ""
 
-echo "Your app is ready."
-echo "You can now start to code by launching:"
-echo "   cd $fullpath"
-echo "   npm install"
-echo "   npm run dev"
 read -p

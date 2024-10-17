@@ -59,8 +59,9 @@ rmdir /s /q .git || (
 
 echo Your app is ready.
 echo You can now start to code by launching :
-echo    cd %fullpath%
-echo    npm install
-echo    npm run dev
+echo cd %fullpath%
+echo npm install
+echo npm run dev
+echo. 
 pause
 exit /b 0
