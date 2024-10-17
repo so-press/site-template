@@ -1,5 +1,19 @@
 # Site Template
 
+- [Dossiers](#dossiers)
+- [Concepts : Les "briques"](#concepts--les-briques)
+- [Outils](#outils)
+  - [Responsive design](#responsive-design)
+  - [Svg](#svg)
+  - [Générateur](#générateur)
+  - [Build](#build)
+  - [Serveur local](#serveur-local)
+- [Déploiement](#déploiement)
+- [Installation](#installation)
+- [Mise à jour](#mise-à-jour)
+
+# Site Template
+
 Création d'un template de site. Cet outil permet d'intégrer un design et de créer des pages, puis de les enrichir de CSS et de JS pour pouvoir ensuite les incorporer dans un site web de production.
 
 ## dossiers
