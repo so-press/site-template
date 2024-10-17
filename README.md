@@ -82,7 +82,7 @@ Les fichiers seront générés dans le dossier `./dist`
 On peut lancer un serveur local en utilisant la commande
 
 ```
-    npm run serve
+    npm run dev
 ```
 
 Le serveur tourne sur localhost, avec le port défini dans le fichier .env.
