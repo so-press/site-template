@@ -109,7 +109,7 @@ On peut lancer un serveur local en utilisant la commande
 npm run dev
 ```
 
-Le serveur tourne sur localhost, avec le port défini dans le fichier .env.(valeur par défaut: 3000)
+Le serveur tourne sur localhost, avec le port défini dans le fichier .env.(valeur par défaut: 3000). La sortie de cette commande affiche l'url locale du site, ainsi que l'url sur le réseau (pour accéder au site depuis un autres device du même réseau). Est affichée aussi l'url de l'administration, qui permet de parcours toutes les briques
 
 ## Déploiement
 
