@@ -110,7 +110,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/so-press/site-template
 Sous Linux ou Mac
 
 ```
-curl -O https://raw.githubusercontent.com/so-press/site-template/refs/heads/master/lib/scripts/install.sh && chmod +x install.sh && ./install.sh
+curl -s -O https://raw.githubusercontent.com/so-press/site-template/refs/heads/master/lib/scripts/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 ## Mise à jour
