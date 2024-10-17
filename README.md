@@ -28,11 +28,13 @@ Le dossier `./src/globals/` contient tous les éléments js et (s)css non spéci
 
 Une brique peut être : Une page, un composant ou un fragment. La commande `npm run gen` permet de générer des prototypes de briques. [En savoir plus sur cette commande](#générateur)
 
-Pages : structure HTML/CSS/JS complexe qui contient tous les éléments HTML à afficher pour remplir une multitude de fonctions (Exemple : Une page produit, Une page d'accueil, etc)
+Pages : structure HTML/CSS/JS riche qui se structure à partir de composants et de fragments, qui contient tous les éléments HTML nécéssaire pour remplir une multitude de fonctions (Exemple : Une page produit, Une page d'accueil, etc)
 
-Composants : Structure HTML/CSS/JS complexe qui se structure elle même à partir d'autres composants, ou de fragments, et qui permet de remplir un certains nombre de fonctions définies. (Exemple : Un menu, un Footer, Un module de sondage)
+Composants : Structure HTML/CSS/JS qui se structure elle même à partir d'autres composants, ou de fragments, et qui permet de remplir un certains nombre de fonctions définies. (Exemple : Un menu, un Footer, Un module de sondage)
 
 Fragments : Brique de base du design, faite de HTML/CSS/JS simple, qui ne contient pas de composants ou de fragements, et qui peut remplir un ou deux objectifs très précis. (Exemple : Un bouton, Une illsutration)
+
+[Logique basée sur l'Atomic Design, où u site est composés d'élément de plus en plus complexes](https://atomicdesign.bradfrost.com/)
 
 Un site est composé de pages
 Une page est composée de composants et de fragments
