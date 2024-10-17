@@ -43,13 +43,22 @@ cd "$fullpath" || {
 }
 
 # Clone the repository and hide the output
-git clone git@github.com:so-press/site-template.git . >/dev/null 2>&1 || {
+git clone https://github.com/so-press/site-template.git . >/dev/null 2>&1 || {
     echo "Error: Failed to clone the repository."
     exit 1
 }
 
 # Remove the .git folder
 rm -rf .git || {
+    echo "Error: Failed to remove the .git folder."
+    exit 1
+}
+
+echo "Your app is ready."
+echo "You can now start to code by launching:"
+echo "   cd $fullpath"
+echo "   npm install"
+echo "   npm run dev"
     echo "Error: Failed to remove the .git folder."
     exit 1
 }

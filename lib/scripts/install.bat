@@ -46,7 +46,7 @@ cd "%fullpath%" || (
 )
 
 REM Clone the repository and hide the output
-git clone git@github.com:so-press/site-template.git . >nul 2>&1 || (
+git clone https://github.com/so-press/site-template.git . >nul 2>&1 || (
     echo Error: Failed to clone the repository.
     exit /b 1
 )

@@ -28,7 +28,7 @@ mkdir "%tempfolder%" || (
 )
 
 REM Clone the repository into the temp folder and hide the output
-git clone git@github.com:so-press/site-template.git "%tempfolder%" >nul 2>&1 || (
+git clone https://github.com/so-press/site-template.git "%tempfolder%" >nul 2>&1 || (
     echo Error: Failed to clone the repository.
     exit /b 1
 )
