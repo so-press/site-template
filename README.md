@@ -107,7 +107,7 @@ On peut lancer un serveur local en utilisant la commande
 npm run dev
 ```
 
-Le serveur tourne sur localhost, avec le port défini dans le fichier .env.
+Le serveur tourne sur localhost, avec le port défini dans le fichier .env.(valeur par défaut: 3000)
 
 ## Déploiement
 
