@@ -26,7 +26,7 @@ Le dossier `./src/globals/` contient tous les éléments js et (s)css non spéci
 
 ## Concepts : Les "briques"
 
-Une brique peut être : Une page, un composant ou un fragment
+Une brique peut être : Une page, un composant ou un fragment. La commande `npm run gen` permet de générer des prototypes de briques. [En savoir plus sur cette commande](#générateur)
 
 Pages : structure HTML/CSS/JS complexe qui contient tous les éléments HTML à afficher pour remplir une multitude de fonctions (Exemple : Une page produit, Une page d'accueil, etc)
 
