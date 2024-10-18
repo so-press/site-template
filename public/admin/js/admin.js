@@ -45,7 +45,10 @@ Admin.modules.menu = (() => {
       const div = document.createElement('div')
       div.id='template-menu'
       div.innerHTML = html.join('');
-      if(localStorage.getItem('template-menu-closed')=='true') div.classList.add('closed')
+      const closed = localStorage.getItem('template-menu-closed') ? localStorage.getItem('template-menu-closed')==='true' : true;
+      console.log({closed})
+      if(closed) 
+        div.classList.add('closed')
       document.body.append(div)
 
       div.addEventListener('click',e => {
