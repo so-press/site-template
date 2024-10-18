@@ -4,13 +4,19 @@ import {gen} from './lib/gen.js'
 import {copyPublicToDist, emptyDistFolder} from './lib/files.js'
 import process from 'node:process'
 
-if (process.argv.includes('--build')) {
-  emptyDistFolder()
-  runBuildTask()
-  copyPublicToDist()
-} else if (process.argv.includes('--gen')) {
-  gen()
-} else {
-  serve()
+try {
+  if (process.argv.includes('--build')) {
+    await emptyDistFolder()
+    await runBuildTask()
+    await copyPublicToDist()
+  } else if (process.argv.includes('--gen')) {
+    await gen()
+  } else {
+    await serve()
+  }
+} catch (error) {
+  console.error('An error occurred:', error)
+  throw error // Throwing the error will cause the process to exit with a non-zero code.
 }
 
+process.exit(0)

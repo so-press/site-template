@@ -56,6 +56,7 @@
     "semicolon": false,
     "space": 2,
     "rules": {
+      "unicorn/no-process-exit": "off",
       "camelcase": "off",
       "comma-dangle": [
         "error",
