@@ -1,6 +1,6 @@
 # Site Template
 
-- [Dossiers](#dossiers)
+- [Structure du projet](#structure-du-projet)
 - [Concepts : Les "briques"](#concepts--les-briques)
 - [Outils](#outils)
   - [Responsive design](#responsive-design)
@@ -16,7 +16,7 @@
 
 Création d'un template de site. Cet outil permet d'intégrer un design et de créer des pages, puis de les enrichir de CSS et de JS pour pouvoir ensuite les incorporer dans un site web de production.
 
-## dossiers
+## Structure du projet
 
 Le dossier `./src` contient les fichiers utilisés pour construire le design: `.js`, `.css` ou `.scss`, `.hbs` et `.json`. Le dossier `./src/assets` contient lui les assets (svg principalement) utilisés par la tâche de build
 
