@@ -43,7 +43,7 @@ Un fragment ne contient que du HTML standard
 
 Les briques sont stockées dans les dossiers
 
-```
+```sh
 ./src/pages/
 ./src/components/
 ./src/fragments/
@@ -65,7 +65,7 @@ Chaque brique peut être importée dans une autre via la syntax `{{>[slug de la 
 
 Exemple :
 
-```
+```hbs
 {{>menu}}
 ```
 
@@ -73,9 +73,58 @@ Exemple :
 
 ### Responsive design
 
-Le template présente 5 brealpoints identifiés par les noms tiny, small, medium, large, xlarge (Le détail est dans ./lib/breakpoints.js)
+Le template présente 5 brealpoints identifiés par les noms `tiny`, `small`, `medium`, `large`, `xlarge` (Le détail des breakpoints est consultable dans le fichier [./lib/breakpoints.js](./lib/breakpoints.js))
 
-Ces breakpoints
+Ces breakpoints sont utilisables de deux manières :
+
+### Mixins SCSS responsive
+
+Utiliser la syntaxte @include [slug du breakpoint] pour utiliser un breakpoint. Exemple avec cet appel au breakpoint `medium`:
+
+```scss
+@include medium {
+  // ...
+}
+```
+
+Qui sera remplacé par cette media query :
+
+```css
+@media (min-width: 1200px) {
+  // ...
+}
+```
+
+### Fichiers SCSS/CSS responsive
+
+On peut aussi créer des fichier `.scss` dans les dossiers des briques, en plus du fichier `.scss` de base, au nom duquel on ajoute le slug d'un breakpoint (`test-[slug du breakpoint].scss`) pour que toutes les règles définies dans le fichier ne soient appliquées que dans ce breakpoint.
+
+Exemple :
+Voici un fichier `test-medium.scss`
+
+```scss
+.test {
+  font-weight: bold;
+}
+.test2 {
+  font-weight: bolder;
+}
+```
+
+Après compilation, le fichier css contiendra alors
+
+```css
+@media (min-width: 1200px) {
+  .test {
+    font-weight: bold;
+  }
+  .test2 {
+    font-weight: bolder;
+  }
+}
+```
+
+(cela fonctionne aussi bien pour les fichiers `.scss` que `.css`)
 
 ### Svg
 
