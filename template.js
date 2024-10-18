@@ -9,6 +9,7 @@ try {
     await emptyDistFolder()
     await runBuildTask()
     await copyPublicToDist()
+    process.exit(0)
   } else if (process.argv.includes('--gen')) {
     await gen()
   } else {
@@ -19,4 +20,3 @@ try {
   throw error // Throwing the error will cause the process to exit with a non-zero code.
 }
 
-process.exit(0)
