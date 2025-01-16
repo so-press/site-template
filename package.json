@@ -26,13 +26,12 @@
     "handlebars": "^4.7.8",
     "js-beautify": "^1.15.1",
     "lorem-ipsum": "^2.0.8",
-    "node-sass": "^9.0.0",
     "open-props": "^1.7.6",
-    "sass": "^1.79.3",
     "ws": "^8.18.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.7",
+    "sass": "^1.83.4",
     "xo": "^0.59.3"
   },
   "sass": {
@@ -56,6 +55,7 @@
     "semicolon": false,
     "space": 2,
     "rules": {
+      "no-await-in-loop": "off",
       "unicorn/no-process-exit": "off",
       "camelcase": "off",
       "comma-dangle": [
