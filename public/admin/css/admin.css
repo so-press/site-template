@@ -90,3 +90,13 @@
         }
     }
 }
+
+
+body:after {
+    display: block;
+    background-color: #333333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
