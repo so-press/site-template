@@ -128,7 +128,7 @@ Après compilation, le fichier css contiendra alors
 
 ### Svg
 
-Les fichiers `.hbs` peuvent inclure des assets svg via la syntaxe {{svg 'slug du svg'}}. Les svg sont stockés dans ./src/asets/svg
+Les fichiers `.hbs` peuvent inclure des assets svg via la syntaxe {{svg 'slug du svg'}} ou {{svgUse 'slug du svg'}}. Dans ce dernier cas, il faut aussi apeller le helper `{{svgDefs}}` dans le footer de la page pour que les svg soient visibles. Les svg sont stockés dans ./public/svg
 
 ### Générateur
 
